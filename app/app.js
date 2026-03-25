@@ -1,4 +1,9 @@
+require('dotenv').config();
+const secretKey = process.env.APP_SECRET_KEY;
+console.log("Mijn geheime sleutel is:", secretKey);
+
 const express = require('express');
+const app = express();const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
